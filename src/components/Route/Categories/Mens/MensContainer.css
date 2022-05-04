@@ -1,0 +1,62 @@
+body{
+    background-color: white;
+}
+.card{
+    position: relative;
+    border:none!important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 22%), 0 6px 20px 0 rgba(0, 0, 0, 36%);
+    overflow: hidden;
+}
+.card::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    background-color: rgb(27 20 20 / 54%);
+    border-radius: 4px;
+    transition: all ease 1s;
+}
+.card:hover::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    background-color: rgb(27 20 20 / 0%);
+    border-radius: 4px;
+}
+.cardText{
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+}
+.card:hover .cardText{
+    left: -300px;
+}
+.cartButton{
+    position: relative;
+    left: 0px;
+    border: 1px solid white;
+    transition: all ease 1s;
+}
+.card:hover .cartButton{
+    left: -35px;
+    border: none;
+}
+.orderButton{
+    position: relative;
+    right: 0px;
+    border: 1px solid white;
+    transition: all ease 1s;
+}
+.card:hover .orderButton{
+    right: -44px;
+    border: none;
+}
+.cardContent{
+    position: absolute;
+    bottom: 0;
+}

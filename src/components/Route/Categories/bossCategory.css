@@ -1,0 +1,52 @@
+.categorySection {
+    height: 600px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 25px auto;
+    width: 27%;
+
+}
+.categorySection a{
+    text-transform: uppercase;
+}
+.jewelerySection{
+    background: url("../../../assets/jewelry2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.electronicsSection{
+    background: url("../../../assets/electronics.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.menSection{
+    background: url("../../../assets/mens2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.womenSection{
+    background: url("../../../assets/women2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+ .categorySectionSub{
+    transition: all 2s ease;
+}   
+.categorySection:hover .categorySectionSub{
+    transform: scale(1.1);
+}
+.categoryBtns{
+    padding: 25px;
+    background-color: #0000007a;
+    border: none;
+} 
+.categoryBtns a{
+    text-decoration:none;
+    color: white;
+    font-size: 20px;
+}
