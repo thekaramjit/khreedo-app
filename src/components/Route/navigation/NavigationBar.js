@@ -51,7 +51,7 @@ function NavigationBar() {
                                     </li>
 
                                     <li className="nav-item">
-                                        <Link className="nav-link   text-light" to="/cart"><i class="fa-solid fa-bag-shopping"></i>
+                                        <Link className="nav-link   text-light" to="/cart"><i className="fa-solid fa-bag-shopping"></i>
                                         <span className="badge bg-light text-dark mx-1">{cartItems.length}</span></Link>
                                     </li>
                                 </ul>

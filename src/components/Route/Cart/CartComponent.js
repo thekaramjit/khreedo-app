@@ -1,11 +1,12 @@
-import React from 'react'
-import { useDispatch } from 'react-redux';
+import React, { useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { getId } from '../../../Redux/actions';
 import './CartComponent.css'
 
 function CartComponent(props){
   const dispatch=useDispatch()
+  
 
     const handlePlaceOrder=()=>{
         dispatch(getId(id))
@@ -13,6 +14,7 @@ function CartComponent(props){
     const { id, title, price, category, description, image }=props.item;
   return (
     < >
+      
         <div className="col-md-4" id={id}>
                 <div className="card card1 p-3 my-3" key={id}>
                     <img style={{"height": "281px"}} src={image} className="card-img-top w-50 m-auto" alt="Mens's collection" />
@@ -26,7 +28,7 @@ function CartComponent(props){
                         </div>
                     </div>
                 </div>
-            </div>
+      </div>
     </>
   )
 }
